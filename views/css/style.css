@@ -1,8 +1,11 @@
 *{
 	margin:0;
 	padding:0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+html, body{
+	height: 100%;
+}
 body{
 	display:flex;
 	flex-direction:column;
@@ -11,13 +14,15 @@ body{
 }
 
 header{
+	position: fixed;
+	top: 0;
 	display:flex;
 	flex-direction:row;
 	align-items:center;
 	justify-content:left;
 	width: 100%;
 	background:linear-gradient(45deg, rgb(55, 0, 255), rgb(52, 8, 173));
-	height: 60px;
+	height: 10%;
 	color: white;
 }
 header > h1 {
@@ -27,12 +32,16 @@ header > h1 {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
+	height: 90%;
+	margin-top: 5%;
 }
 .card{
 	display: flex;
 	flex-direction: column;
-	margin: 20px;
+	margin: 10px;
 	padding: 10px;
 	box-shadow: 0px 0px 10px lightgray;
 	border-radius: 20px;
@@ -44,7 +53,7 @@ header > h1 {
 	height: 100px;
 }
 .open-btn{
-	background-color: limegreen;
+	background-color: blue;
 	color: white;
 	box-shadow: 0px 0px 10px lightgray;
 	font-size: 1.2rem;
@@ -53,9 +62,11 @@ header > h1 {
 	padding: 10px;
 	transition: background-color 0.5s ease;
 	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
 }
 .open-btn:hover{
-	background-color: lime;
+	background-color: lightgreen;
 }
 #price{
 	color: rgb(39, 39, 39);
